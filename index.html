@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Álbum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header principal -->
+    <header class="header-bar">
+        Compact-Disc @
+    </header>
+
+    <!-- Navegação com a barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Página Inicial</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pesquisa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Populares</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main com informações detalhadas do álbum -->
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Imagem do álbum em formato maior -->
+            <div class="col-md-6">
+                <img id="albumImage" src="astro.jpeg" alt="Imagem do Álbum" class="img-fluid">
+            </div>
+            <!-- Título e sinopse do álbum -->
+  <h2 id="albumTitle">Astroworld </h2>
+  <p id="albumDescription"> Lançado em 2018, Astroworld é o terceiro álbum de estúdio de Travis Scott e um marco na cena do rap e do hip hop contemporâneo. O álbum combina influências do trap, rap experimental, psicodelia e música eletrônica, criando uma sonoridade única e imersiva. A produção do álbum é densa e atmosférica, com batidas pesadas e uma variedade de samples e efeitos sonoros que criam uma experiência quase cinematográfica. Faixas como "SICKO MODE", "STOP TRYING TO BE GOD" e "STARGAZING" se destacam por sua originalidade e pela habilidade de Travis Scott em criar climas e texturas sonoras inovadoras. Astroworld também apresenta colaborações de artistas como Drake, Kid Cudi e Frank Ocean, o que adiciona uma diversidade de estilos ao álbum. Com temas que abordam a fama, o consumo, e a busca por liberdade, Astroworld é um álbum experimental e ousado, consolidando Travis Scott como um dos artistas mais inovadores da sua geração. </p>
+ <h2 id="albumTitle">Tracklist</h2>
+ <p id="albumDescription"> <strong>Lado 1:</strong> STARGAZING -
+    CAROUSEL -
+    SICKO MODE -
+    R.I.P. SCREW -
+    STOP TRYING TO BE GOD - 
+    NO BYSTANDERS -
+    SKELETONS.
+    <p id="albumDescription"> <strong>Lado 2:</strong> WAKE UP -
+        5% TINT -
+        NC-17 -
+        ASTROTHUNDER - 
+        YOSEMITE -
+        CAN'T SAY -
+        WHO? WHAT! -
+        BUTTERFLY EFFECT.</p>
+
+            <div class="col-md-6">
+                <!-- Resumo do álbum -->
+                <h2 id="albumTitle"></h2>
+                <p id="albumDescription"></p>
+
+                <div class="container mt-5">
+                    <h2>Avalie o Álbum</h2>
+            
+                    <!-- Sistema de avaliação de estrelas -->
+                    <div id="starRating" class="d-flex">
+                        <!-- Estrelas serão geradas dinamicamente com JavaScript -->
+                    </div>
+                    <div id="ratingMessage" class="mt-2"></div>
+            
+                    <h4 class="mt-4">Resenha:</h4>
+                    <textarea id="reviewText" class="form-control" rows="4"></textarea>
+                    <button id="submitReview" class="btn btn-primary mt-2">Enviar Resenha</button>
+            
+                    <h4 class="mt-4">Resenhas:</h4>
+                    <div id="reviewsList">
+                        <!-- Resenhas serão exibidas aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
